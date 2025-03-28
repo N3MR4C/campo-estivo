@@ -1,0 +1,31 @@
+/* Corpo della pagina */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Colore di sfondo azzurro chiaro */
+    color: #333; /* Colore del testo */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header (intestazione) */
+header {
+    background-color: #4CAF50; /* Colore di sfondo verde */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Sezione del programma */
+main section {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Footer (piè di pagina) */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+}
