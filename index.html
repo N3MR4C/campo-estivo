@@ -5,82 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campo Estivo 2025</title>
     <link rel="stylesheet" href="styles.css"> <!-- Collegamento al foglio di stile CSS -->
-    <style>
-        /* Aggiungi qui il tuo CSS personalizzato (oppure nel file styles.css) */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        #home, #informazioni-genitori, #iscrizioni, #team, #galleria, #faq, #contatti {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-        }
-        h2 {
-            color: #333;
-        }
-        .logo {
-            max-width: 150px;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .faq-item {
-            margin-bottom: 10px;
-        }
-        .galleria {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
-        .foto-campo {
-            max-width: 200px;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-        .foto-campo:hover {
-            transform: scale(1.1);
-        }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
 </head>
 <body>
-    <!-- Sezione Homepage -->
-    <section id="home">
-        <header>
-            <img src="images/logo.png" alt="Logo del Campo Estivo" class="logo">
+
+    <!-- Sezione Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo Campo Estivo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#informazioni-genitori">Informazioni</a></li>
+                <li><a href="#iscrizioni">Iscrizioni</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#galleria">Galleria</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sezione Home -->
+    <section id="home" class="home-section">
+        <div class="home-content">
             <h1>Benvenuti al Campo Estivo 2025!</h1>
             <p>Un'esperienza unica all'insegna del divertimento, della natura e dell'apprendimento. Unisciti a noi per un'estate indimenticabile!</p>
-            <p><strong>Testimonianza:</strong> "Il campo estivo ha cambiato l'estate di mio figlio! Si è divertito e ha fatto nuove amicizie!" - Laura M.</p>
-        </header>
+        </div>
     </section>
 
-    <!-- Sezione Informazioni per i Genitori -->
-    <section id="informazioni-genitori">
+    <!-- Sezione Informazioni Genitori -->
+    <section id="informazioni-genitori" class="info-section">
         <h2>Informazioni Importanti per i Genitori</h2>
-        <p><strong>Date del Campo:</strong> 15 Giugno - 30 Luglio 2025</p>
+        <p><strong>Quando:</strong> 15 Giugno - 30 Luglio 2025</p>
         <p><strong>Orari:</strong> 8:00 AM - 5:00 PM</p>
         <p><strong>Tariffe:</strong> €200 a settimana</p>
         <p><strong>Dove si svolge:</strong> Parco Nazionale di X, Via delle Colline 123</p>
@@ -95,54 +52,45 @@
     </section>
 
     <!-- Sezione Iscrizioni -->
-    <section id="iscrizioni">
+    <section id="iscrizioni" class="iscrizioni-section">
         <h2>Iscrizioni Aperte!</h2>
         <p>Compila il modulo di iscrizione online per partecipare al Campo Estivo 2025:</p>
-        <a href="https://link-al-modulo.com" target="_blank">Iscriviti ora!</a>
-        <p><strong>Disponibilità:</strong> Ultimi posti disponibili per la settimana del 15 Giugno!</p>
+        <a href="https://link-al-modulo.com" class="button" target="_blank">Iscriviti ora!</a>
     </section>
 
     <!-- Sezione Team -->
-    <section id="team">
+    <section id="team" class="team-section">
         <h2>Il Nostro Team</h2>
-        <p>Il nostro team di animatori è composto da professionisti qualificati e appassionati di bambini e attività all'aperto. Ecco chi c'è dietro il campo estivo!</p>
-        
-        <div class="animatore">
-            <img src="images/animatore1.jpg" alt="Giulia, Animatrice" class="foto-animatore">
-            <h3>Giulia Rossi</h3>
-            <p>Animatrice con esperienza pluriennale in campi estivi. Ama la natura e le attività all'aria aperta.</p>
-        </div>
-        <div class="animatore">
-            <img src="images/animatore2.jpg" alt="Marco, Animatore" class="foto-animatore">
-            <h3>Marco Bianchi</h3>
-            <p>Sportivo e appassionato di giochi di gruppo. Marco ha studiato educazione fisica ed è esperto in attività ludiche.</p>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="images/animatore1.jpg" alt="Giulia, Animatrice" class="team-photo">
+                <h3>Giulia Rossi</h3>
+                <p>Animatrice con esperienza pluriennale in campi estivi. Ama la natura e le attività all'aria aperta.</p>
+            </div>
+            <div class="team-member">
+                <img src="images/animatore2.jpg" alt="Marco, Animatore" class="team-photo">
+                <h3>Marco Bianchi</h3>
+                <p>Sportivo e appassionato di giochi di gruppo. Marco ha studiato educazione fisica ed è esperto in attività ludiche.</p>
+            </div>
         </div>
     </section>
 
     <!-- Sezione Galleria -->
-    <section id="galleria">
+    <section id="galleria" class="galleria-section">
         <h2>Galleria Fotografica</h2>
         <p>Guarda alcune delle nostre foto più belle dei campi estivi passati!</p>
-        <p><a href="https://link-alla-tua-galleria-dotsmemories.com" target="_blank">Visita la Galleria su DotsMemories</a></p>
-        
-        <div class="galleria">
-            <a href="https://link-alla-tua-galleria-dotsmemories.com" target="_blank">
-                <img src="images/campo1.jpg" alt="Attività nel campo" class="foto-campo">
-            </a>
-            <a href="https://link-alla-tua-galleria-dotsmemories.com" target="_blank">
-                <img src="images/campo2.jpg" alt="Giochi all'aperto" class="foto-campo">
-            </a>
-            <a href="https://link-alla-tua-galleria-dotsmemories.com" target="_blank">
-                <img src="images/campo3.jpg" alt="Escursione nel bosco" class="foto-campo">
-            </a>
+        <div class="galleria-images">
+            <img src="images/campo1.jpg" alt="Campo Estivo 2025 - Attività" class="galleria-image">
+            <img src="images/campo2.jpg" alt="Campo Estivo 2025 - Escursione" class="galleria-image">
+            <img src="images/campo3.jpg" alt="Campo Estivo 2025 - Giochi" class="galleria-image">
         </div>
     </section>
 
-    <!-- Sezione Domande Frequenti (FAQ) -->
-    <section id="faq">
+    <!-- Sezione FAQ -->
+    <section id="faq" class="faq-section">
         <h2>Domande Frequenti</h2>
         <div class="faq-item">
-            <h3>Come posso iscrivere mio figlio al campo?</h3>
+            <h3>Come posso iscrivere mio figlio?</h3>
             <p>Puoi iscriverti tramite il modulo online che trovi nella sezione "Iscrizioni".</p>
         </div>
         <div class="faq-item">
@@ -156,7 +104,7 @@
     </section>
 
     <!-- Sezione Contatti -->
-    <section id="contatti">
+    <section id="contatti" class="contatti-section">
         <h2>Contattaci</h2>
         <p>Hai domande? Contattaci tramite email o telefonicamente.</p>
         <p>Email: <a href="mailto:campoestivo@esempio.com">campoestivo@esempio.com</a></p>
@@ -167,5 +115,6 @@
     <footer>
         <p>&copy; 2025 Campo Estivo - Tutti i diritti riservati.</p>
     </footer>
+
 </body>
 </html>
