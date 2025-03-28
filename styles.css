@@ -1,31 +1,161 @@
-/* Corpo della pagina */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff; /* Colore di sfondo azzurro chiaro */
-    color: #333; /* Colore del testo */
+/* Reset di default */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header (intestazione) */
-header {
-    background-color: #4CAF50; /* Colore di sfondo verde */
-    padding: 20px;
+/* Corpo della pagina */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar di navigazione */
+nav {
+    background-color: #4CAF50;
+    padding: 10px 0;
     text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
 }
 
-/* Sezione del programma */
-main section {
-    padding: 20px;
-    margin-top: 20px;
+nav ul li a:hover {
+    text-decoration: underline;
 }
 
-/* Footer (piè di pagina) */
-footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 10px;
+/* Sezione Home */
+#home {
     background-color: #4CAF50;
     color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+#home h1 {
+    font-size: 3rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+}
+
+/* Sezione Programma */
+#programma {
+    padding: 40px 20px;
+    background-color: #ffeb3b; /* Giallo chiaro */
+    text-align: center;
+}
+
+#programma h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.attivita {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.giorno {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.giorno h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.giorno ul {
+    list-style-type: none;
+}
+
+.giorno ul li {
+    font-size: 1.2rem;
+}
+
+/* Sezione Attività */
+#attivita {
+    padding: 40px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#attivita h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#attivita ul {
+    list-style-type: none;
+}
+
+#attivita ul li {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Sezione Contatti */
+#contatti {
+    padding: 40px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+}
+
+#contatti h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contatti a {
+    color: white;
+    text-decoration: none;
+}
+
+#contatti a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
