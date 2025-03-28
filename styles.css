@@ -1,161 +1,213 @@
-/* Reset di default */
+/* Reset di base */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo della pagina */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Navbar di navigazione */
-nav {
-    background-color: #4CAF50;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Sezione Home */
-#home {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-#home h1 {
-    font-size: 3rem;
-}
-
-#home p {
-    font-size: 1.5rem;
-}
-
-/* Sezione Programma */
-#programma {
-    padding: 40px 20px;
-    background-color: #ffeb3b; /* Giallo chiaro */
-    text-align: center;
-}
-
-#programma h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.attivita {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.giorno {
+/* Header e Navbar */
+header {
     background-color: #4CAF50;
     color: white;
     padding: 20px;
-    margin: 10px;
-    border-radius: 8px;
-    width: 30%;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
-.giorno h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.giorno ul {
+.navbar .logo img {
+    width: 120px;
+}
+
+.nav-links {
     list-style-type: none;
+    display: flex;
+    gap: 20px;
 }
 
-.giorno ul li {
-    font-size: 1.2rem;
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
-/* Sezione Attività */
-#attivita {
-    padding: 40px 20px;
-    background-color: #ffffff;
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Sezione Home */
+.home-section {
+    background: url('images/home-bg.jpg') no-repeat center center/cover;
+    color: white;
     text-align: center;
+    padding: 80px 20px;
 }
 
-#attivita h2 {
-    font-size: 2.5rem;
+.home-section h1 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
-#attivita ul {
-    list-style-type: none;
+.home-section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-#attivita ul li {
+/* Sezione Informazioni Genitori */
+.info-section {
+    padding: 40px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+.info-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Sezione Iscrizioni */
+.iscrizioni-section {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.iscrizioni-section .button {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.iscrizioni-section .button:hover {
+    background-color: #ff9900;
+}
+
+/* Sezione Team */
+.team-section {
+    padding: 40px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+.team-members {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    width: 250px;
+}
+
+.team-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* Sezione Contatti */
-#contatti {
-    padding: 40px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
+/* Sezione Galleria */
+.galleria-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+    margin-top: 30px;
 }
 
-#contatti h2 {
-    font-size: 2.5rem;
+.galleria-images {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.galleria-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.galleria-image:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ */
+.faq-section {
+    background-color: white;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+.faq-item {
     margin-bottom: 20px;
 }
 
-#contatti a {
-    color: white;
-    text-decoration: none;
+.faq-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
 }
 
-#contatti a:hover {
-    text-decoration: underline;
+.faq-item p {
+    font-size: 1rem;
+    color: #666;
 }
 
 /* Footer */
 footer {
     background-color: #4CAF50;
     color: white;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
+    margin-top: 30px;
 }
 
 footer p {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
 }
 
-footer a {
-    color: #ffffff;
-    text-decoration: none;
-    margin: 0 10px;
-}
+/* Responsività */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
 
-footer a:hover {
-    text-decoration: underline;
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .team-members {
+        flex-direction: column;
+    }
+
+    .galleria-images {
+        flex-direction: column;
+        align-items: center;
+    }
 }
